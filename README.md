@@ -12,3 +12,17 @@ This iterative procedure requires that, at each step, the entire system status i
 Consider a dataset that contains n observations of a phenomenon. Here, let f be an objective function that we want to minimize with respect to a series of parameters x. Here, we can write the following equation:
 
 ![Screen Shot 2022-01-01 at 12 31 59 AM](https://user-images.githubusercontent.com/73736016/147836396-83849119-0cf0-4f59-9197-e94c732703b6.png)
+
+From the analysis of the previous equation, we can deduce that the evaluation of the objective function f requires n evaluations of the function f, one for each value contained in the dataset.
+
+In the classic gradient descent method, at each step, the function gradient is calculated in correspondence with all the values of the dataset through the following equation:
+![Screen Shot 2022-01-01 at 12 33 23 AM](https://user-images.githubusercontent.com/73736016/147836425-173f1f3f-fce2-499c-bc02-18d4a36c6a57.png)
+
+In some cases, the evaluation of the sum present in the previous equation can be particularly expensive, such as when the dataset is particularly large and there is no elementary expression for the objective function. The stochastic descent of the gradient solves this problem by introducing an approximation of the gradient function. At each step, instead of the sum of the gradients being evaluated in correspondence to the data contained in the dataset, the evaluation of the gradient is used only in a random subset of the dataset.
+
+
+
+
+
+
+
